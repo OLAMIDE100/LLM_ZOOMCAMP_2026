@@ -1,0 +1,32 @@
+# Python-generated files
+__pycache__/
+*.py[oc]
+build/
+dist/
+wheels/
+*.egg-info
+
+# Virtual environments
+.venv
+.ipynb_checkpoints
+.env
+faq.db
+faq.db-wal
+md.db
+md.db-wal
+chuck_md.db
+chuck_md.db-wal
+
+faq.db-shm
+homework_1/chuck_md.db-shm
+homework_1/md.db-shm
+homework_1/md.db-wal
+homework_1/chuck_md.db-wal
+homework_1/md.db
+homework_1/chuck_md.db
+homework_1/md.db-shm
+homework_1/chuck_md.db-shm
+homework_1/md.db-wal
+homework_1/chuck_md.db-wal
+homework_1/md.db
+homework_1/chuck_md.db
