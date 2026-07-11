@@ -1,0 +1,361 @@
+question,document
+"What is the main goal of this module, and what kind of RAG system are you going to build?",01-agentic-rag/lessons/01-intro.md
+"How does this course treat large language models: do you open them up and train one, or just call them through an API?",01-agentic-rag/lessons/01-intro.md
+What are the main limitations of LLMs that make retrieval helpful in the first place?,01-agentic-rag/lessons/01-intro.md
+"How does RAG help an LLM answer questions better, especially when the answer is in your own documents?",01-agentic-rag/lessons/01-intro.md
+What will be covered in the first part of the module versus the second part?,01-agentic-rag/lessons/01-intro.md
+"What do I need installed before I start this module, and do I need anything besides Python and Jupyter?",01-agentic-rag/lessons/02-environment.md
+How do I create the project from scratch and which packages should I add first?,01-agentic-rag/lessons/02-environment.md
+What is the recommended way to keep my OpenAI API key safe in this setup?,01-agentic-rag/lessons/02-environment.md
+How do I check that the OpenAI client is working in a notebook after loading my environment variables?,01-agentic-rag/lessons/02-environment.md
+"If I want to use Groq or another OpenAI-compatible service, how do I configure the client differently?",01-agentic-rag/lessons/02-environment.md
+Why doesn’t a plain LLM answer course-specific questions well without extra help?,01-agentic-rag/lessons/03-rag.md
+"What does RAG mean, and what are the two main parts it combines?",01-agentic-rag/lessons/03-rag.md
+How do you make the model answer using the FAQ instead of guessing from general knowledge?,01-agentic-rag/lessons/03-rag.md
+What happens if the search step finds the wrong document in a RAG setup?,01-agentic-rag/lessons/03-rag.md
+Can the search tool or LLM provider be swapped out without changing the rest of the system?,01-agentic-rag/lessons/03-rag.md
+"Where does the FAQ data come from, and how do you download it as JSON?",01-agentic-rag/lessons/04-dataset.md
+"What fields does each FAQ record include, and what is each one used for?",01-agentic-rag/lessons/04-dataset.md
+Why do we use the course slug when searching the FAQ entries?,01-agentic-rag/lessons/04-dataset.md
+How does this FAQ dataset fit into the RAG workflow from search to answer generation?,01-agentic-rag/lessons/04-dataset.md
+"Is the FAQ data already cleaned and ready to use, or do you usually need extra prep work for this kind of project?",01-agentic-rag/lessons/04-dataset.md
+How does a search engine decide which documents to show first?,01-agentic-rag/lessons/05-search.md
+What’s the difference between word-based search and semantic search?,01-agentic-rag/lessons/05-search.md
+Why do we need an index instead of sending every document to the LLM?,01-agentic-rag/lessons/05-search.md
+"In minsearch, what fields should be treated as text and which one should be used for exact course matching?",01-agentic-rag/lessons/05-search.md
+How do boosting and course filtering change the search results?,01-agentic-rag/lessons/05-search.md
+Why do we need to include the search results in the prompt before sending it to the LLM?,01-agentic-rag/lessons/06-building-prompt.md
+What is the difference between the fixed instructions and the user prompt in this setup?,01-agentic-rag/lessons/06-building-prompt.md
+How should the prompt tell the model to respond if it cannot find the answer in the provided context?,01-agentic-rag/lessons/06-building-prompt.md
+How do you turn the retrieved documents into the context string that gets added to the prompt?,01-agentic-rag/lessons/06-building-prompt.md
+What does the final prompt look like once the question and the FAQ context are combined?,01-agentic-rag/lessons/06-building-prompt.md
+How do you actually send the built prompt to the model in this RAG setup?,01-agentic-rag/lessons/07-llm.md
+"What’s the difference between the newer Responses API and chat completions, and when would I use each one?",01-agentic-rag/lessons/07-llm.md
+"Where is the model’s answer stored in the returned object, and is there a shorter way to get just the text?",01-agentic-rag/lessons/07-llm.md
+How can I estimate how much a request costs from the token usage info?,01-agentic-rag/lessons/07-llm.md
+Why does the example pass both developer instructions and the user prompt as a message list instead of just one string?,01-agentic-rag/lessons/07-llm.md
+Why does the lesson suggest splitting the RAG code into separate helper files instead of keeping it in notebooks?,01-agentic-rag/lessons/08-rag-helper.md
+What do the two new files `ingest.py` and `rag_helper.py` each handle in the RAG setup?,01-agentic-rag/lessons/08-rag-helper.md
+How does the `load_faq_data()` function gather the FAQ documents before building the index?,01-agentic-rag/lessons/08-rag-helper.md
+"Why is the RAG logic wrapped in a class, and what do the constructor arguments let you change later?",01-agentic-rag/lessons/08-rag-helper.md
+"How do the `search`, `build_context`, `build_prompt`, and `llm` methods work together when you call `rag(query)`?",01-agentic-rag/lessons/08-rag-helper.md
+Why does loading and indexing everything at startup stop being practical as the dataset gets larger?,01-agentic-rag/lessons/09-data-ingestion.md
+What’s the main difference between keeping the index in memory and saving it to a database file?,01-agentic-rag/lessons/09-data-ingestion.md
+How do the ingestion notebook and the query notebook work together with the same SQLite-backed index?,01-agentic-rag/lessons/09-data-ingestion.md
+What changes in the RAG code when switching from minsearch to sqlitesearch?,01-agentic-rag/lessons/09-data-ingestion.md
+When should I use a simple in-memory search tool versus a persistent backend like SQLite or Elasticsearch?,01-agentic-rag/lessons/09-data-ingestion.md
+"What are the main parts of the RAG system built in this module, and how do they work together?",01-agentic-rag/lessons/10-rag-next-steps.md
+Why would an agent be useful compared with the simple pipeline that searches only once with the user’s original query?,01-agentic-rag/lessons/10-rag-next-steps.md
+How can this setup deal with questions written in another language?,01-agentic-rag/lessons/10-rag-next-steps.md
+Why is Elasticsearch a good search backend for a real RAG app instead of a lighter tool?,01-agentic-rag/lessons/10-rag-next-steps.md
+"When would fine-tuning make sense instead of using retrieval, and why is RAG usually the better first choice?",01-agentic-rag/lessons/10-rag-next-steps.md
+Why can a simple RAG flow fail even when the answer is in the documents?,01-agentic-rag/lessons/11-agents-intro.md
+What changes when you let the LLM control the search instead of sending the query straight to it?,01-agentic-rag/lessons/11-agents-intro.md
+"What kinds of things can an agent do that a fixed pipeline can’t, like with typos or unclear questions?",01-agentic-rag/lessons/11-agents-intro.md
+How does an agent decide what action to take and when to stop answering?,01-agentic-rag/lessons/11-agents-intro.md
+What topics does the next part of the module cover after this intro to agents?,01-agentic-rag/lessons/11-agents-intro.md
+"What does the RAG setup do in this course example, and why use the FAQ instead of searching a long document manually?",01-agentic-rag/lessons/12-rag-revision.md
+"Which helper files do you need for the RAG pipeline here, and what does each one handle?",01-agentic-rag/lessons/12-rag-revision.md
+"How do you create the RAG assistant once the OpenAI client, documents, and index are ready?",01-agentic-rag/lessons/12-rag-revision.md
+Why does the query work with “Ollama” but fail when the user types “Olama”?,01-agentic-rag/lessons/12-rag-revision.md
+What is the main weakness of this fixed RAG pipeline that makes the lesson say you need an agent?,01-agentic-rag/lessons/12-rag-revision.md
+"Why does plain RAG fail when the user misspells a term like ""Olama,"" and how does letting the model use a search tool fix that?",01-agentic-rag/lessons/13-function-calling.md
+What is the difference between the developer controlling the steps in RAG and the model deciding actions in an agent setup?,01-agentic-rag/lessons/13-function-calling.md
+"How do you define a search tool for the model, and why do you need both a description and a JSON schema for its arguments?",01-agentic-rag/lessons/13-function-calling.md
+"What happens when the model is given a tool and asked the same FAQ question, and why does it sometimes rewrite the query before searching?",01-agentic-rag/lessons/13-function-calling.md
+"Why do you need to send the full conversation history back after a function call, and how does that affect token usage and cost?",01-agentic-rag/lessons/13-function-calling.md
+Why do we need a loop for tool use instead of just doing one function call at a time?,01-agentic-rag/lessons/14-agentic-loop.md
+"What are the three main pieces of an agent in this lesson, and what does each one do?",01-agentic-rag/lessons/14-agentic-loop.md
+How does the helper function turn a model's tool call into the output the API expects?,01-agentic-rag/lessons/14-agentic-loop.md
+"What stops the agent loop from continuing forever, and when does it exit?",01-agentic-rag/lessons/14-agentic-loop.md
+How do the instructions make the agent do more searches and avoid answering off-topic questions?,01-agentic-rag/lessons/14-agentic-loop.md
+Why would someone use ToyAIKit instead of writing the agent loop by hand every time?,01-agentic-rag/lessons/15-frameworks.md
+"Can ToyAIKit build a tool schema automatically from a Python function, and what does it use to do that?",01-agentic-rag/lessons/15-frameworks.md
+What pieces do you need to create before running an agent with ToyAIKit in a notebook?,01-agentic-rag/lessons/15-frameworks.md
+"What does the runner return after a single prompt, and how can you inspect the conversation history or cost?",01-agentic-rag/lessons/15-frameworks.md
+"How do you continue the same conversation with ToyAIKit, and is there a way to use it like an interactive chat?",01-agentic-rag/lessons/15-frameworks.md
+"What are the main agent-building frameworks mentioned here, and when would each one be a good pick?",01-agentic-rag/lessons/16-other-frameworks.md
+How is PydanticAI different from the other frameworks in terms of tools and switching models?,01-agentic-rag/lessons/16-other-frameworks.md
+"If I want to build agents around Gemini or Google Cloud, which framework should I look at?",01-agentic-rag/lessons/16-other-frameworks.md
+"Why does the lesson say not to use an agent by default, and what are the downsides of adding one?",01-agentic-rag/lessons/16-other-frameworks.md
+What simpler options should I try before deciding that I actually need an agent loop?,01-agentic-rag/lessons/16-other-frameworks.md
+Why do keyword-based search tools fail on questions that mean the same thing but use different wording?,02-vector-search/lessons/01-intro.md
+"What are the two main steps in a vector search system, from building the index to answering a query?",02-vector-search/lessons/01-intro.md
+How does an embedding model help vector search find texts with similar meaning?,02-vector-search/lessons/01-intro.md
+"What does cosine similarity tell you about two vectors, and how should I interpret values near 1, 0, and -1?",02-vector-search/lessons/01-intro.md
+"When should I choose vector search over keyword search, and why is a hybrid approach often better?",02-vector-search/lessons/01-intro.md
+"What does it mean to embed text, and why do we need embeddings before doing vector search?",02-vector-search/lessons/02-embeddings.md
+"How are word embeddings different from sentence embeddings, and why does context change the vector?",02-vector-search/lessons/02-embeddings.md
+Why does the lesson say similar questions end up close together in vector space?,02-vector-search/lessons/02-embeddings.md
+"Which embedding model does the lesson use here, and why is it a good fit for short English FAQ text?",02-vector-search/lessons/02-embeddings.md
+How do dot product and cosine similarity relate for normalized embeddings?,02-vector-search/lessons/02-embeddings.md
+How do you turn each FAQ item into text before making embeddings for the whole dataset?,02-vector-search/lessons/03-embeddings-dataset.md
+Why does the lesson suggest processing the FAQ embeddings in batches instead of all at once?,02-vector-search/lessons/03-embeddings-dataset.md
+How do you use `tqdm` and batch size when encoding the FAQ texts?,02-vector-search/lessons/03-embeddings-dataset.md
+"What shape do you get after putting the embeddings into a NumPy array, and what do the two dimensions mean?",02-vector-search/lessons/03-embeddings-dataset.md
+How many embedding vectors are created for the FAQ dataset in this lesson?,02-vector-search/lessons/03-embeddings-dataset.md
+How does a vector search system rank FAQ entries for a user question?,02-vector-search/lessons/04-vector-search.md
+Why is using a matrix dot product faster than looping through documents in Python?,02-vector-search/lessons/04-vector-search.md
+How do you find the single best matching document from the similarity scores?,02-vector-search/lessons/04-vector-search.md
+How can you get the top five matches instead of only the top one?,02-vector-search/lessons/04-vector-search.md
+Why would you pass several search results to the LLM instead of just the highest-scoring one?,02-vector-search/lessons/04-vector-search.md
+How do I use minsearch’s vector search instead of writing the similarity code myself?,02-vector-search/lessons/05-minsearch-vector.md
+What do I need to pass when building a vector index with minsearch?,02-vector-search/lessons/05-minsearch-vector.md
+How does searching with minsearch find the best document for a query vector?,02-vector-search/lessons/05-minsearch-vector.md
+"Can I limit vector search results to just one course, and if so how?",02-vector-search/lessons/05-minsearch-vector.md
+What kind of result should I expect when I search for whether I can still join the course?,02-vector-search/lessons/05-minsearch-vector.md
+How do you switch a RAG setup from keyword lookup to vector search without changing the whole pipeline?,02-vector-search/lessons/06-rag-vector.md
+Why does the vector-search version of RAG need to turn the question into an embedding before searching?,02-vector-search/lessons/06-rag-vector.md
+What extra thing does the vector-search subclass add compared with the base RAG helper?,02-vector-search/lessons/06-rag-vector.md
+"How do you create and use the RAG helper class with the OpenAI client, indexed documents, and the search index?",02-vector-search/lessons/06-rag-vector.md
+Why can vector search do better than keyword search when the user asks the same thing in different words?,02-vector-search/lessons/06-rag-vector.md
+"What are the main drawbacks of the earlier in-memory vector search approach, and why do they become a problem as the dataset grows?",02-vector-search/lessons/07-sqlitesearch-vector.md
+"How is approximate nearest-neighbor search different from exact nearest-neighbor search, and what tradeoff does it make?",02-vector-search/lessons/07-sqlitesearch-vector.md
+"What does sqlitesearch use to store vectors, and how does that let one process build the index while another process queries it later?",02-vector-search/lessons/07-sqlitesearch-vector.md
+"Which vector search modes does sqlitesearch support, and when would each one be a good fit?",02-vector-search/lessons/07-sqlitesearch-vector.md
+How do you reopen a saved sqlitesearch index and use it in a RAG setup without rebuilding all the embeddings again?,02-vector-search/lessons/07-sqlitesearch-vector.md
+"How do you store text embeddings in Postgres with pgvector, and what column type do you use for them?",02-vector-search/lessons/08-pgvector.md
+How do you search for the closest FAQ answer in pgvector using a new question as the query?,02-vector-search/lessons/08-pgvector.md
+"What does the `<=>` operator do in pgvector, and why does the query sort by it in ascending order?",02-vector-search/lessons/08-pgvector.md
+"How can you speed up vector lookup on a bigger table in Postgres, and what index type is used?",02-vector-search/lessons/08-pgvector.md
+Why would you choose pgvector over the earlier in-memory or SQLite options for a RAG app?,02-vector-search/lessons/08-pgvector.md
+Why would I use ONNX Runtime for embeddings instead of sentence-transformers in production?,02-vector-search/lessons/09-onnx-embedder.md
+"How much smaller was the environment when using ONNX Runtime, and what packages does it need at runtime?",02-vector-search/lessons/09-onnx-embedder.md
+"What files do I get after downloading the ONNX model, and do I need to download them every time?",02-vector-search/lessons/09-onnx-embedder.md
+What does the ONNX-based embedder do internally before it returns an embedding vector?,02-vector-search/lessons/09-onnx-embedder.md
+"Which embedding models can I swap in with the same code, and how do I change the model being used?",02-vector-search/lessons/09-onnx-embedder.md
+When is it actually worth adding vector search instead of just sticking with text search?,02-vector-search/lessons/10-next-steps.md
+"What’s the usual path for improving a RAG system: text search first, then what comes next?",02-vector-search/lessons/10-next-steps.md
+How does hybrid search work when you already have both text and vector retrieval?,02-vector-search/lessons/10-next-steps.md
+What does reranking do after you’ve pulled back candidate documents?,02-vector-search/lessons/10-next-steps.md
+What should I try next if I want to keep improving my search setup on my own data?,02-vector-search/lessons/10-next-steps.md
+How can AI help speed up building workflows in Kestra?,03-orchestration/lessons/01-intro.md
+"What is retrieval-augmented generation, and why would I use it in a workflow?",03-orchestration/lessons/01-intro.md
+What do AI agents do inside a workflow that a normal chatbot can't?,03-orchestration/lessons/01-intro.md
+Why does this module stress context engineering so much?,03-orchestration/lessons/01-intro.md
+Can I use something other than Gemini with Kestra's AI features?,03-orchestration/lessons/01-intro.md
+What goes wrong if I ask ChatGPT to build a Kestra flow without giving it any project-specific details?,03-orchestration/lessons/02-context-engineering.md
+Why do AI models sometimes suggest old plugin names or fake properties when generating code?,03-orchestration/lessons/02-context-engineering.md
+How can having the right context make AI-generated workflows more reliable for production?,03-orchestration/lessons/02-context-engineering.md
+"Does this problem only happen with code generation, or can it also affect answers based on my own data?",03-orchestration/lessons/02-context-engineering.md
+What is the main idea behind context engineering in this lesson?,03-orchestration/lessons/02-context-engineering.md
+What do I need installed before I can run the Kestra examples locally?,03-orchestration/lessons/03-setup.md
+How do I start the preconfigured Kestra setup and open its web interface?,03-orchestration/lessons/03-setup.md
+"Which API keys are needed for the flows in this module, and which ones are only needed for certain flows?",03-orchestration/lessons/03-setup.md
+How are API keys supposed to be added to Kestra so the flows can use them?,03-orchestration/lessons/03-setup.md
+How do I import the sample workflows and run the first agent flow from the Kestra UI?,03-orchestration/lessons/03-setup.md
+What does Kestra’s AI Copilot do differently from building a flow task by task by hand?,03-orchestration/lessons/04-ai-copilot.md
+Why is Copilot more trustworthy than a generic chatbot when generating Kestra flows?,03-orchestration/lessons/04-ai-copilot.md
+How do I turn on and use AI Copilot in the Kestra UI?,03-orchestration/lessons/04-ai-copilot.md
+What does the lesson mean by the idea that Copilot gets you about 95% of the way there?,03-orchestration/lessons/04-ai-copilot.md
+"Can Copilot keep improving an existing flow if I keep giving it follow-up requests, and what kind of changes can it make?",03-orchestration/lessons/04-ai-copilot.md
+What does RAG do differently from a normal LLM chat when I want answers from my own data?,03-orchestration/lessons/05-rag.md
+Why does the lesson say RAG helps prevent the model from making things up?,03-orchestration/lessons/05-rag.md
+"In Kestra, what happens in the ingest part of a RAG workflow and what happens when a user asks a question?",03-orchestration/lessons/05-rag.md
+"Why would I use the KV Store in the demo, and when should I switch to a real vector database?",03-orchestration/lessons/05-rag.md
+"How is web search RAG different from static RAG, and when should I pick one over the other?",03-orchestration/lessons/05-rag.md
+When should I choose an AI agent instead of a normal workflow in Kestra?,03-orchestration/lessons/06-agents.md
+"What parts make up a Kestra AI agent, like the prompt, tools, memory, and provider?",03-orchestration/lessons/06-agents.md
+How does Kestra’s AIAgent plugin handle the back-and-forth loop with the model and tools?,03-orchestration/lessons/06-agents.md
+"What kinds of tools can an agent use in Kestra for things like search, code, or calling other flows?",03-orchestration/lessons/06-agents.md
+"How can I see what an agent did during a run, including tokens, tool calls, and logs?",03-orchestration/lessons/06-agents.md
+Why would I use a multi-agent setup instead of just one agent for a harder task?,03-orchestration/lessons/07-multi-agent.md
+What are the main advantages of splitting work across several agents?,03-orchestration/lessons/07-multi-agent.md
+"In the company research example, what does the research agent do versus the main analyst agent?",03-orchestration/lessons/07-multi-agent.md
+How does one agent get used like a tool in this lesson’s workflow?,03-orchestration/lessons/07-multi-agent.md
+What good practices does the lesson suggest for building multi-agent systems?,03-orchestration/lessons/07-multi-agent.md
+"When should I use AI Copilot instead of RAG, agents, or a normal workflow in a project?",03-orchestration/lessons/08-best-practices.md
+"Which Gemini model is recommended for most workflows, and when does it make sense to switch to the stronger one?",03-orchestration/lessons/08-best-practices.md
+How can I keep AI API keys out of Git and handle them safely in Kestra?,03-orchestration/lessons/08-best-practices.md
+What logging or metrics should I turn on when an AI agent is acting weird or hard to debug?,03-orchestration/lessons/08-best-practices.md
+What should I check before putting an AI workflow into production?,03-orchestration/lessons/08-best-practices.md
+"Why is context so important for AI assistants, and what goes wrong when they don’t have it?",03-orchestration/lessons/09-next-steps.md
+How does Kestra’s AI Copilot help you create or improve flows from just a description of the input and goal?,03-orchestration/lessons/09-next-steps.md
+When should I use RAG instead of a normal prompt if I want answers based on my own data?,03-orchestration/lessons/09-next-steps.md
+What kind of workflow steps are good candidates for an AI agent that can use tools and decide what to do next?,03-orchestration/lessons/09-next-steps.md
+"What should I try next after this module if I want to keep learning with Kestra, and where can I find examples or help?",03-orchestration/lessons/09-next-steps.md
+Why do we need evaluation instead of just trying a few searches by hand?,04-evaluation/lessons/01-intro.md
+How does the question-answer test set get built from FAQ data for search evaluation?,04-evaluation/lessons/01-intro.md
+What is the difference between offline evaluation and online evaluation in this module?,04-evaluation/lessons/01-intro.md
+Why does the lesson say synthetic questions can make the results look better than they really are?,04-evaluation/lessons/01-intro.md
+"What metrics or checks are used for search, RAG, and agent evaluation in this course?",04-evaluation/lessons/01-intro.md
+Why do we need ground truth data when checking how well search works?,04-evaluation/lessons/02-ground-truth.md
+How can you create evaluation queries if you don't already have real users or a live system?,04-evaluation/lessons/02-ground-truth.md
+Why does the lesson say every FAQ entry should have a stable ID before building the test set?,04-evaluation/lessons/02-ground-truth.md
+What is the point of using structured output instead of plain text when asking the model for questions?,04-evaluation/lessons/02-ground-truth.md
+What fields should each ground-truth record contain after the model generates the questions?,04-evaluation/lessons/02-ground-truth.md
+How do you generate ground truth questions for every FAQ document instead of just one?,04-evaluation/lessons/03-ground-truth-batch.md
+Why does the lesson use a retry wrapper when calling the LLM for question generation?,04-evaluation/lessons/03-ground-truth-batch.md
+How can you speed up ground truth creation across many documents without doing each request one by one?,04-evaluation/lessons/03-ground-truth-batch.md
+What information goes into each ground truth record created from a document?,04-evaluation/lessons/03-ground-truth-batch.md
+"How do you turn the generated records into a CSV file, and how do you estimate the total LLM cost?",04-evaluation/lessons/03-ground-truth-batch.md
+How do you check if a search result is actually the right document for a ground-truth question?,04-evaluation/lessons/04-search-evaluation.md
+Why does the lesson put the search call into a separate function instead of calling the index directly?,04-evaluation/lessons/04-search-evaluation.md
+What does the relevance list with 0s and 1s mean in this evaluation setup?,04-evaluation/lessons/04-search-evaluation.md
+"How do you run the same evaluation on all ground-truth questions, not just one example?",04-evaluation/lessons/04-search-evaluation.md
+"Why make the relevance code accept a search function so it can work with text, vector, or hybrid search later?",04-evaluation/lessons/04-search-evaluation.md
+How do you turn a list of search hits into a hit-rate score?,04-evaluation/lessons/05-search-metrics.md
+What’s the difference between hit rate and MRR in search evaluation?,04-evaluation/lessons/05-search-metrics.md
+Why does the MRR formula use the result position plus one?,04-evaluation/lessons/05-search-metrics.md
+How do you write a simple function to compute these search metrics?,04-evaluation/lessons/05-search-metrics.md
+When should you be careful about trusting very high retrieval scores?,04-evaluation/lessons/05-search-metrics.md
+How do you use offline evaluation to choose better search boosts instead of just relying on intuition?,04-evaluation/lessons/06-search-tuning.md
+What happened to hit rate and MRR when the question field weight was increased on its own?,04-evaluation/lessons/06-search-tuning.md
+"Which mix of weights worked best when tuning question, answer, and section together?",04-evaluation/lessons/06-search-tuning.md
+Why does the lesson say to care about both hit rate and MRR when judging search results?,04-evaluation/lessons/06-search-tuning.md
+"When does grid search make sense for search tuning, and when should you switch to something like Bayesian optimization?",04-evaluation/lessons/06-search-tuning.md
+"Why isn’t checking retrieval alone enough for a RAG app, and what else do you need to test?",04-evaluation/lessons/11-evaluation-intro.md
+What parts of a RAG system can cause a bad final answer even if search looks okay?,04-evaluation/lessons/11-evaluation-intro.md
+How do you evaluate the answer produced by a RAG or agent pipeline?,04-evaluation/lessons/11-evaluation-intro.md
+What extra thing should you keep from an agent besides the final response when evaluating it?,04-evaluation/lessons/11-evaluation-intro.md
+"Why use another language model as a judge, and what does it look at when deciding if an answer matches the reference?",04-evaluation/lessons/11-evaluation-intro.md
+How do you evaluate the whole RAG pipeline instead of just checking whether search found the right document?,04-evaluation/lessons/12-rag-answers.md
+"What do A, Q, and A' stand for in the RAG evaluation setup, and why compare A' to A?",04-evaluation/lessons/12-rag-answers.md
+"Where do the ground-truth questions come from, and how do you get the matching original FAQ answer for each one?",04-evaluation/lessons/12-rag-answers.md
+"Why does the lesson use `RAGWithUsage`, and what search weights does it use for question, answer, and section?",04-evaluation/lessons/12-rag-answers.md
+How do you run RAG for all the ground-truth questions in parallel and save the generated answers to a CSV file?,04-evaluation/lessons/12-rag-answers.md
+How does an LLM judge check whether a RAG answer is actually good enough?,04-evaluation/lessons/13-llm-as-judge.md
+What information do you compare when you evaluate a RAG answer offline?,04-evaluation/lessons/13-llm-as-judge.md
+Why can a wrong exact match still be considered a correct answer in this kind of evaluation?,04-evaluation/lessons/13-llm-as-judge.md
+"What should the judge return besides the pass/fail label, and why is that useful?",04-evaluation/lessons/13-llm-as-judge.md
+How do you run this evaluation on all the answers and then inspect the failures?,04-evaluation/lessons/13-llm-as-judge.md
+How do you compare an agent’s reply against the FAQ answer in this evaluation setup?,04-evaluation/lessons/14-agent-evaluation.md
+What exactly counts as the agent’s trajectory when you judge its behavior?,04-evaluation/lessons/14-agent-evaluation.md
+How do you run the search-based agent on the ground truth questions and save its outputs?,04-evaluation/lessons/14-agent-evaluation.md
+What should a good search trajectory look like for these FAQ agents?,04-evaluation/lessons/14-agent-evaluation.md
+How does the judge score both the final answer and the tool-use path for each agent run?,04-evaluation/lessons/14-agent-evaluation.md
+"What should I check when I change search settings, swap models, or rewrite prompts in my RAG app?",04-evaluation/lessons/15-next-steps.md
+How do I move from synthetic test questions to real user data for evaluating a system?,04-evaluation/lessons/15-next-steps.md
+Why is manual review still important even if I already have automated metrics?,04-evaluation/lessons/15-next-steps.md
+"What evaluation tools are suggested for production RAG systems, and what do they help with?",04-evaluation/lessons/15-next-steps.md
+What are the main ways to monitor an AI system after it has been deployed?,04-evaluation/lessons/15-next-steps.md
+What do we mean by monitoring in a RAG app after it’s been deployed?,05-monitoring/lessons/01-intro.md
+"Why aren’t offline metrics like hit rate, MRR, cosine similarity, and an LLM judge enough once real users start using the system?",05-monitoring/lessons/01-intro.md
+"What kinds of things should we log for each user question, such as tokens, cost, latency, and feedback?",05-monitoring/lessons/01-intro.md
+"What extra components do we need to build monitoring, besides the RAG pipeline itself?",05-monitoring/lessons/01-intro.md
+"How is monitoring for a RAG system set up here, and what role do Streamlit, PostgreSQL, dashboards, and Grafana play?",05-monitoring/lessons/01-intro.md
+What pieces do I need to get a basic course Q&A assistant working with RAG?,05-monitoring/lessons/02-assistant-setup.md
+How does the assistant load the FAQ data and turn it into something the model can search?,05-monitoring/lessons/02-assistant-setup.md
+"Why does the setup use python-dotenv, and what environment variable is it meant to load?",05-monitoring/lessons/02-assistant-setup.md
+How do I test the assistant from the command line with my own question?,05-monitoring/lessons/02-assistant-setup.md
+"Why would I add a Makefile target for running the assistant, and what would it look like?",05-monitoring/lessons/02-assistant-setup.md
+How do you turn the assistant into a simple web chat instead of using only the command line?,05-monitoring/lessons/03-chat-app.md
+"What Streamlit code is used to show a question box, a button, and the answer in the browser?",05-monitoring/lessons/03-chat-app.md
+What command do you use to install Streamlit and then launch the app locally?,05-monitoring/lessons/03-chat-app.md
+How do you put the Streamlit launch command into a Makefile so you can just run one make target?,05-monitoring/lessons/03-chat-app.md
+Why does the lesson say monitoring is needed even though the RAG setup already works?,05-monitoring/lessons/03-chat-app.md
+"How do you measure how long each LLM reply took, how many tokens it used, and what it cost in this app?",05-monitoring/lessons/04-metrics.md
+Why does the lesson use a dataclass for one model call instead of just passing around a dict?,05-monitoring/lessons/04-metrics.md
+"How is the per-call cost computed from the token counts, and which model does that example support?",05-monitoring/lessons/04-metrics.md
+What changes are made to the RAG class so it can save metrics without rewriting the whole pipeline?,05-monitoring/lessons/04-metrics.md
+"How can the Streamlit chat page show the latest call’s response time, token counts, and cost after the answer appears?",05-monitoring/lessons/04-metrics.md
+Why do we store every chat in PostgreSQL instead of keeping the metrics only in memory?,05-monitoring/lessons/05-database.md
+How do you start the Postgres container with Docker so Grafana can reach it later?,05-monitoring/lessons/05-database.md
+"What columns does the conversations table need, and why are course and a timezone-aware timestamp included?",05-monitoring/lessons/05-database.md
+How does the Python code connect to Postgres and create the table without losing data every restart?,05-monitoring/lessons/05-database.md
+"When saving a conversation, why do we use RETURNING id and keep the user’s question separate from the model prompt?",05-monitoring/lessons/05-database.md
+How do you read saved chat records back out of the database in this lesson?,05-monitoring/lessons/06-querying.md
+Why does the lesson turn SQL rows into a dataclass instead of using the raw tuples directly?,05-monitoring/lessons/06-querying.md
+What columns does the query pull from the conversations table when loading recent records?,05-monitoring/lessons/06-querying.md
+"Why does the code sort the results by time, and what might be faster as the table gets bigger?",05-monitoring/lessons/06-querying.md
+What does the small test block at the end of the script do before moving on to the dashboard?,05-monitoring/lessons/06-querying.md
+"What stats does the dashboard show at the top, and how are they calculated from the conversations table?",05-monitoring/lessons/07-streamlit-dashboard.md
+How do you add a simple Streamlit dashboard to show cost and response time trends over time?,05-monitoring/lessons/07-streamlit-dashboard.md
+Why does the lesson use Postgres here instead of just sticking with SQLite for the dashboard?,05-monitoring/lessons/07-streamlit-dashboard.md
+What does the recent conversations section display for each entry in the dashboard?,05-monitoring/lessons/07-streamlit-dashboard.md
+How do you run the Streamlit dashboard if port 8501 is already taken?,05-monitoring/lessons/07-streamlit-dashboard.md
+"Why do we add thumbs up and thumbs down if we already track latency, tokens, and cost?",05-monitoring/lessons/08-user-feedback.md
+How does the lesson store both human ratings and later LLM-based evaluations in one database table?,05-monitoring/lessons/08-user-feedback.md
+"What columns are in the feedback table, and what values do source and score use?",05-monitoring/lessons/08-user-feedback.md
+Why does the app need to save the conversation ID in session state before showing the feedback buttons?,05-monitoring/lessons/08-user-feedback.md
+What changes are needed in the Streamlit app to save a user’s +1 or -1 rating after an answer?,05-monitoring/lessons/08-user-feedback.md
+"How does an LLM judge work in the app, and how is it different from the offline evaluation setup?",05-monitoring/lessons/09-built-in-judge.md
+Why do we use structured output and a `RelevanceVerdict` model for the judge instead of plain text?,05-monitoring/lessons/09-built-in-judge.md
+What is the role of the explanation field in the judge’s output if the app mainly uses the relevance label?,05-monitoring/lessons/09-built-in-judge.md
+How do you plug the judge into the Streamlit app and store its result in the database?,05-monitoring/lessons/09-built-in-judge.md
+What should you watch out for when using this kind of built-in judge in a real system?,05-monitoring/lessons/09-built-in-judge.md
+How do you add judge relevance results and user thumbs up/down to the Streamlit dashboard?,05-monitoring/lessons/10-feedback-dashboard.md
+What SQL query is used to count the judge relevance labels in the feedback table?,05-monitoring/lessons/10-feedback-dashboard.md
+How does the lesson calculate the number of positive and negative user votes from feedback scores?,05-monitoring/lessons/10-feedback-dashboard.md
+What changes are needed in dashboard.py to display the new feedback panels?,05-monitoring/lessons/10-feedback-dashboard.md
+"Why can the feedback charts look empty at first, and what does the lesson suggest doing next?",05-monitoring/lessons/10-feedback-dashboard.md
+How does this lesson generate fake chat data for the dashboard instead of waiting for real users?,05-monitoring/lessons/11-synthetic-data.md
+What fields does the fake LLM record include when a conversation is created?,05-monitoring/lessons/11-synthetic-data.md
+How are user ratings and judge feedback added to each synthetic conversation?,05-monitoring/lessons/11-synthetic-data.md
+Why does the script give positive scores more often than negative ones?,05-monitoring/lessons/11-synthetic-data.md
+How do you run the generator so it keeps adding one new conversation every second?,05-monitoring/lessons/11-synthetic-data.md
+Why use Grafana instead of just keeping the Streamlit dashboard for monitoring?,05-monitoring/lessons/12-grafana.md
+How do I start Grafana in Docker so it can use the same Postgres network and keep its data after restart?,05-monitoring/lessons/12-grafana.md
+What should I enter to connect Grafana to the PostgreSQL database in this setup?,05-monitoring/lessons/12-grafana.md
+How do I write Grafana SQL queries so charts follow the selected time range and use the right time column?,05-monitoring/lessons/12-grafana.md
+"What panels should I make for response time, token usage, cost, model usage, relevance, user feedback, and recent conversations?",05-monitoring/lessons/12-grafana.md
+"How do I use Docker Compose to start the database, Grafana, and the Streamlit app together instead of running each container separately?",05-monitoring/lessons/13-docker-compose.md
+What should go inside the Dockerfile for the Streamlit app in this setup?,05-monitoring/lessons/13-docker-compose.md
+Which environment settings are kept in the .env file for this project?,05-monitoring/lessons/13-docker-compose.md
+"How are the PostgreSQL, Grafana, and Streamlit services connected in the Compose file, and what ports do they use?",05-monitoring/lessons/13-docker-compose.md
+"What commands do I run to bring the whole stack up, initialize the database, and shut everything down?",05-monitoring/lessons/13-docker-compose.md
+What are the main things we added to the RAG app to monitor and debug it better?,05-monitoring/lessons/14-next-steps.md
+"Why might someone choose a monitoring framework like Langfuse, Phoenix, Logfire, or Evidently instead of wiring everything up themselves?",05-monitoring/lessons/14-next-steps.md
+What extra work would you need to do before using this kind of logging setup in a real production system?,05-monitoring/lessons/14-next-steps.md
+"Why does the lesson suggest using OpenTelemetry, and where does it fit in this setup?",05-monitoring/lessons/14-next-steps.md
+What are some good follow-up projects if I want to extend the monitoring work beyond RAG?,05-monitoring/lessons/14-next-steps.md
+"What are the two main stages in a RAG system, and what happens in each one?",06-best-practices/lessons/01-intro.md
+Why does this lesson say retrieval is the part of RAG that matters most for getting good answers?,06-best-practices/lessons/01-intro.md
+What are the five RAG improvement methods covered in this module?,06-best-practices/lessons/01-intro.md
+How does small-to-big chunk retrieval work in practice?,06-best-practices/lessons/01-intro.md
+Which two RAG techniques does this module focus on first because they give the biggest payoff with little work?,06-best-practices/lessons/01-intro.md
+How does hybrid search combine semantic matching with exact word matching?,06-best-practices/lessons/02-hybrid-search.md
+What does the alpha value do in a weighted hybrid search score?,06-best-practices/lessons/02-hybrid-search.md
+How does Reciprocal Rank Fusion calculate a document’s final score from multiple ranked lists?,06-best-practices/lessons/02-hybrid-search.md
+Why does a document that appears near the top of both search results usually win in RRF?,06-best-practices/lessons/02-hybrid-search.md
+How would you write a hybrid_search function that merges keyword and vector results?,06-best-practices/lessons/02-hybrid-search.md
+Why can cosine similarity miss the most relevant result in search?,06-best-practices/lessons/03-reranking.md
+What does reranking do in a document search pipeline?,06-best-practices/lessons/03-reranking.md
+How does Reciprocal Rank Fusion combine results from different search methods?,06-best-practices/lessons/03-reranking.md
+"Can Elasticsearch use RRF directly, and does it need a paid plan?",06-best-practices/lessons/03-reranking.md
+How would you implement RRF yourself if you can't use the built-in version?,06-best-practices/lessons/03-reranking.md
+How do I use LangChain to run the same hybrid search we built with Elasticsearch directly?,06-best-practices/lessons/04-langchain.md
+What packages do I need to install before using the Elasticsearch retriever in LangChain?,06-best-practices/lessons/04-langchain.md
+"How is the hybrid query put together, and what parts handle keyword search vs vector search?",06-best-practices/lessons/04-langchain.md
+"How do you create an `ElasticsearchRetriever` from an Elasticsearch URL, index name, and query function?",06-best-practices/lessons/04-langchain.md
+"How do you evaluate the LangChain version of the retriever, and do the scores stay similar to the direct Elasticsearch approach?",06-best-practices/lessons/04-langchain.md
+How does mixing vector search with keyword search help improve retrieval in RAG?,06-best-practices/lessons/05-next-steps.md
+"What is reranking doing in a search pipeline, and why can even a basic RRF setup help?",06-best-practices/lessons/05-next-steps.md
+Why would you use LangChain with Elasticsearch instead of working with the search queries directly?,06-best-practices/lessons/05-next-steps.md
+"What is the idea behind small-to-big chunk retrieval, and what does ParentDocumentRetriever do?",06-best-practices/lessons/05-next-steps.md
+"Besides hybrid search and reranking, what other RAG techniques are worth trying next, like metadata filtering or query rewriting?",06-best-practices/lessons/05-next-steps.md
+"What kind of app is being built in this project, and what exercise questions should it be able to answer?",07-project-example/lessons/01-intro.md
+How do you create the exercise dataset if there isn’t a real FAQ database to start from?,07-project-example/lessons/01-intro.md
+What fields are included in each exercise record in the generated dataset?,07-project-example/lessons/01-intro.md
+How does the retrieval step work in the RAG pipeline for this fitness assistant?,07-project-example/lessons/01-intro.md
+"What do you pass into the language model, and how are the search results turned into the final prompt?",07-project-example/lessons/01-intro.md
+How do I check whether my retrieval step is working well in this RAG project?,07-project-example/lessons/02-evaluating-retrieval.md
+What should I put in the README for this exercise so it explains the project clearly?,07-project-example/lessons/02-evaluating-retrieval.md
+How is the ground-truth question set created from the workout data?,07-project-example/lessons/02-evaluating-retrieval.md
+"Which metrics are used to judge retrieval quality here, and how are they calculated?",07-project-example/lessons/02-evaluating-retrieval.md
+"How do you tune the field boosts for search, and how do you test the final settings?",07-project-example/lessons/02-evaluating-retrieval.md
+"How do you evaluate whether a RAG system’s answers are actually good, not just whether retrieval found the right docs?",07-project-example/lessons/03-evaluating-rag.md
+What categories does the judge model use when scoring a generated answer’s relevance to the question?,07-project-example/lessons/03-evaluating-rag.md
+How do you run a batch evaluation on a sample of questions and store the results as a dataframe or CSV?,07-project-example/lessons/03-evaluating-rag.md
+What kind of output distribution might you expect from the relevance labels after evaluating a sample of RAG answers?,07-project-example/lessons/03-evaluating-rag.md
+How can this evaluation setup be used to compare a cheaper model like gpt-5.4-mini with a more expensive one like gpt-4o?,07-project-example/lessons/03-evaluating-rag.md
+How do you turn the notebook work into a real Python app with an ingestion step and an API?,07-project-example/lessons/04-interface.md
+"What does the data loading function do, and why is it run when the app starts instead of later?",07-project-example/lessons/04-interface.md
+"How is the retrieval part set up to search the exercise data, and what fields get extra weight?",07-project-example/lessons/04-interface.md
+"How does the prompt get built before sending it to the language model, and what information is included in it?",07-project-example/lessons/04-interface.md
+"What does the Flask endpoint return for a question request, and what should be in the README so others can run the project?",07-project-example/lessons/04-interface.md
+"How do you add an automatic answer-quality check into the RAG pipeline, and what does it return?",07-project-example/lessons/05-monitoring.md
+What data gets stored in Postgres for each chat turn and for user ratings?,07-project-example/lessons/05-monitoring.md
+How does the API handle a new question and then save the result in the database?,07-project-example/lessons/05-monitoring.md
+"What values are allowed when a user sends feedback, and how is it linked to a conversation?",07-project-example/lessons/05-monitoring.md
+"What services are included in the Docker Compose setup for this project, and what is each one for?",07-project-example/lessons/05-monitoring.md
+What kinds of fixes and polish were added after the recording was done?,07-project-example/lessons/06-summary.md
+"About how much did the whole project end up costing in OpenAI API usage, and where did most of that money go?",07-project-example/lessons/06-summary.md
+"If I'm building a similar project, what are the main tips this lesson suggests I follow?",07-project-example/lessons/06-summary.md
+How was the Grafana setup made easier to run automatically in the final version?,07-project-example/lessons/06-summary.md
+"What does the finished fitness assistant project include in terms of data, search, evaluation, and deployment?",07-project-example/lessons/06-summary.md
+How do you handle retrieval when your source material is a bunch of separate articles instead of simple Q&A pairs?,07-project-example/lessons/07-chunking.md
+"If I have one long transcript or PDF, what’s the recommended way to break it up for embedding and search?",07-project-example/lessons/07-chunking.md
+"For books or other really long content, should I chunk everything the same way, or is there a better strategy?",07-project-example/lessons/07-chunking.md
+How are images and slide decks supposed to be turned into something you can search with embeddings?,07-project-example/lessons/07-chunking.md
+"What is semantic chunking, and why is it often better than just splitting by fixed length?",07-project-example/lessons/07-chunking.md

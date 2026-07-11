@@ -1,0 +1,450 @@
+question,answer_agent,answer_orig,tool_calls,cost,document
+Is it too late to start the course if I just found it now?,"No — it’s not too late. You can start the course whenever you want, and the videos and GitHub materials are available. Just follow the docs, work through the lessons, and submit homework before the listed deadlines while the submission form is open.
+
+If you want, I can also point you to the recommended starting steps.","Yes, but if you want to receive a certificate, you need to submit your project while we’re still accepting submissions.","[{'name': 'search', 'arguments': '{""query"":""too late to start course found it now start anytime enrollment late start""}'}]",0.0014295,74eb249bbf
+Can I still join the course after it has already started?,"Yes — you can still join after the course has started.
+
+According to the FAQ: **“I just discovered the course. Can I still join? Yes”**.  
+The only caveat is that **if you want a certificate, you need to submit your project while the course is still accepting submissions**.
+
+If you want, I can also summarize what this means for homework, certificates, and deadlines.","Yes, but if you want to receive a certificate, you need to submit your project while we’re still accepting submissions.","[{'name': 'search', 'arguments': '{""query"":""join course after started late enrollment add after start FAQ""}'}]",0.0012405,74eb249bbf
+"If I enroll late, do I still have a chance to get the certificate?","Yes — **but only if you join while the course is still accepting project submissions**.
+
+According to the FAQ, you can still join late, but to get the certificate you must **submit your project during the live course window**. Certificates are **not** awarded in self-paced mode, because the capstone requires peer reviews that are only available while the course is running.
+
+So the key point is: **late is okay, as long as the submission window is still open**.","Yes, but if you want to receive a certificate, you need to submit your project while we’re still accepting submissions.","[{'name': 'search', 'arguments': '{""query"":""late enrollment certificate chance certificate enroll late""}'}]",0.001230,74eb249bbf
+Do I need to submit the project before submissions close to get certified?,"Yes — to get certified, you need to submit your project while submissions are still open.
+
+A related FAQ says: if you want to receive a certificate, you must submit the project while the course is still accepting submissions. Also, once the submission form closes, you can no longer submit.
+
+If you want, I can also explain whether homework affects certification.","Yes, but if you want to receive a certificate, you need to submit your project while we’re still accepting submissions.","[{'name': 'search', 'arguments': '{""query"":""certified submit project before submissions close get certified""}'}]",0.001128,74eb249bbf
+What’s the deadline for project submission if I want the course certificate?,"For the course certificate, you need to submit your project **while the course is still accepting submissions**. Once the **project submission deadline passes** and the form is closed, you can’t submit anymore.
+
+Also, certificates are only awarded for finishing with a **live cohort** — not in self-paced mode.","Yes, but if you want to receive a certificate, you need to submit your project while we’re still accepting submissions.","[{'name': 'search', 'arguments': '{""query"":""deadline project submission course certificate""}'}]",0.00101775,74eb249bbf
+"I signed up for the LLM Zoomcamp, but I never got a confirmation email — is that a problem?","No, that’s not a problem.
+
+According to the FAQ, you **don’t need the confirmation email** — you’re accepted, and registration is mainly just to gauge interest before the start date. You can go ahead and start learning and submitting homework as long as the form is open.",You don't need it. You're accepted. You can also just start learning and submitting homework (while the form is open) without registering. It is not checked against any registered list. Registration is just to gauge interest before the start date.,"[{'name': 'search', 'arguments': '{""query"":""LLM Zoomcamp confirmation email signup not received problem""}'}]",0.001341,977bf7786c
+Do I actually need an approval email to start the LLM Zoomcamp or submit homework?,"No — you do **not** need an approval/confirmation email.
+
+According to the FAQ, **you’re accepted**, and you can **start learning and submit homework as long as the form is open**. Registration is just to gauge interest and is **not checked against a registered list**.
+
+You can also start anytime using the course materials:
+- LLM Zoomcamp docs
+- Course GitHub repo
+- Course management platform for deadlines and submissions
+
+",You don't need it. You're accepted. You can also just start learning and submitting homework (while the form is open) without registering. It is not checked against any registered list. Registration is just to gauge interest before the start date.,"[{'name': 'search', 'arguments': '{""query"":""approval email start the LLM Zoomcamp submit homework approval email needed""}'}]",0.001443,977bf7786c
+"I registered for the course already, but how do I know if I’m officially accepted?","Yes — for this course, registration does **not** require an approval step.
+
+According to the FAQ: **“You’re accepted.”** You don’t need to wait for a confirmation email, and registration is mainly just to gauge interest. You can go ahead and start learning and submitting homework while the form is open.
+
+If you want, I can also point you to the course start/resources page.",You don't need it. You're accepted. You can also just start learning and submitting homework (while the form is open) without registering. It is not checked against any registered list. Registration is just to gauge interest before the start date.,"[{'name': 'search', 'arguments': '{""query"":""registered officially accepted accepted confirmation enrollment status course""}'}]",0.00133875,977bf7786c
+Is there any list of registered students for the LLM Zoomcamp that homework gets checked against?,"No — homework is **not checked against any registered list**.
+
+According to the FAQ, you can **start learning and submit homework even without registering** (as long as the submission form is open). Registration is only used to **gauge interest before the start date**.",You don't need it. You're accepted. You can also just start learning and submitting homework (while the form is open) without registering. It is not checked against any registered list. Registration is just to gauge interest before the start date.,"[{'name': 'search', 'arguments': '{""query"":""registered students list homework checked against LLM Zoomcamp""}'}]",0.0011805,977bf7786c
+What’s the point of registration if I can already join and start learning without it?,"Registration isn’t required to start learning or submitting homework while the form is open. According to the FAQ, it’s mainly used to **gauge interest before the start date**.
+
+So if you want the short version: you can already begin the course; registration is just for planning/attendance tracking, not a gatekeeper for access.",You don't need it. You're accepted. You can also just start learning and submitting homework (while the form is open) without registering. It is not checked against any registered list. Registration is just to gauge interest before the start date.,"[{'name': 'search', 'arguments': '{""query"":""point of registration if I can already join and start learning without it""}'}]",0.00132675,977bf7786c
+How do students join the Office Hours or live workshop if the Zoom link isn’t shared publicly?,"Students don’t join via the public Zoom link. The Zoom link is only shared with instructors, presenters, and TAs.
+
+For students:
+- Join the session via the DataTalksClub **YouTube Live** stream
+- Ask questions through **Slido** — the link is pinned in the live chat
+- Check the **announcements channel on Telegram or Slack** for the video URL before it starts
+
+Also, don’t rely on posting questions in chat, since they can be missed if the session is busy.","The zoom link is only published to instructors/presenters/TAs.
+
+Students participate via YouTube Live and submit questions to Slido (link is pinned in the chat when live). The video URL should be posted in the [announcements channel on Telegram and Slack](https://t.me/dezoomcamp) before it begins. You can also watch live on the DataTalksClub [YouTube Channel](https://www.youtube.com/c/DataTalksClub).
+
+Don’t post questions in chat as they may be missed if the room is very active.","[{'name': 'search', 'arguments': '{""query"":""students join Office Hours or live workshop Zoom link not shared publicly""}'}]",0.00143175,489dd1c9d9
+Where should I look for the livestream link before an Office Hours session starts?,"Look for the livestream link in the **announcements channel on Telegram and Slack** before the session starts. It should be posted there ahead of time.
+
+You can also watch it live on the **DataTalksClub YouTube channel**.","The zoom link is only published to instructors/presenters/TAs.
+
+Students participate via YouTube Live and submit questions to Slido (link is pinned in the chat when live). The video URL should be posted in the [announcements channel on Telegram and Slack](https://t.me/dezoomcamp) before it begins. You can also watch live on the DataTalksClub [YouTube Channel](https://www.youtube.com/c/DataTalksClub).
+
+Don’t post questions in chat as they may be missed if the room is very active.","[{'name': 'search', 'arguments': '{""query"":""livestream link Office Hours session starts where to look""}'}]",0.0012075,489dd1c9d9
+"Can I watch the live sessions on YouTube, and where do I ask questions during the stream?","Yes — you can watch the live sessions on the DataTalksClub YouTube channel, and the video link is usually posted in the announcements channel on Telegram and Slack before the session starts.
+
+For asking questions during the stream:
+- Use **Slido** — its link is pinned in the chat when the session is live.
+- **Don’t post questions in the YouTube chat**, since they can be missed if the room is busy.
+
+If you want, I can also point you to the course repo and announcement channels.","The zoom link is only published to instructors/presenters/TAs.
+
+Students participate via YouTube Live and submit questions to Slido (link is pinned in the chat when live). The video URL should be posted in the [announcements channel on Telegram and Slack](https://t.me/dezoomcamp) before it begins. You can also watch live on the DataTalksClub [YouTube Channel](https://www.youtube.com/c/DataTalksClub).
+
+Don’t post questions in chat as they may be missed if the room is very active.","[{'name': 'search', 'arguments': '{""query"":""live sessions YouTube ask questions during the stream""}'}]",0.00146325,489dd1c9d9
+"Why isn’t the Zoom URL posted for Office Hours, and who actually gets it?","The Zoom link for Office Hours is **only published to instructors, presenters, and TAs** — it isn’t posted publicly for students.
+
+For students, the session is typically accessed via:
+
+- **YouTube Live**
+- **Slido** for questions
+- The **announcements channel** on **Telegram and Slack** where the live video URL is posted before it starts
+
+If you want, I can also summarize the usual way to join live course sessions.","The zoom link is only published to instructors/presenters/TAs.
+
+Students participate via YouTube Live and submit questions to Slido (link is pinned in the chat when live). The video URL should be posted in the [announcements channel on Telegram and Slack](https://t.me/dezoomcamp) before it begins. You can also watch live on the DataTalksClub [YouTube Channel](https://www.youtube.com/c/DataTalksClub).
+
+Don’t post questions in chat as they may be missed if the room is very active.","[{'name': 'search', 'arguments': '{""query"":""Zoom URL Office Hours who gets it not posted""}'}]",0.00146175,489dd1c9d9
+"Should I put questions in the live chat during Office Hours, or is there a better place to ask them?","No — for Office Hours/live sessions, students should submit questions via **Slido**, not the live chat. The FAQ says the Slido link is pinned in the chat when the session is live, and that questions in the chat can be missed if things get busy.
+
+If you’re asking about general course help outside live sessions, use **Slack** and follow the asking-questions guidelines.","The zoom link is only published to instructors/presenters/TAs.
+
+Students participate via YouTube Live and submit questions to Slido (link is pinned in the chat when live). The video URL should be posted in the [announcements channel on Telegram and Slack](https://t.me/dezoomcamp) before it begins. You can also watch live on the DataTalksClub [YouTube Channel](https://www.youtube.com/c/DataTalksClub).
+
+Don’t post questions in chat as they may be missed if the room is very active.","[{'name': 'search', 'arguments': '{""query"":""Office Hours live chat questions better place ask questions FAQ""}'}]",0.00160575,489dd1c9d9
+How do I begin the LLM Zoomcamp and what should I read first?,"To begin the LLM Zoomcamp, start with these in order:
+
+1. The [LLM Zoomcamp docs](https://datatalks.club/docs/courses/llm-zoomcamp/)
+2. The [general Zoomcamp logistics docs](https://datatalks.club/docs/courses/zoomcamp-logistics/)
+3. The [LLM Zoomcamp GitHub repository](https://github.com/DataTalksClub/llm-zoomcamp)
+
+A typical workflow is:
+
+- Watch the lesson videos
+- Work through the lesson notebooks/code
+- Read the homework instructions on GitHub
+- Submit your answers on the course platform before the deadline
+
+You can start anytime, since the materials are available and the deadlines are listed on the [course management platform](https://courses.datatalks.club/llm-zoomcamp-2026/).
+
+If you want, I can also point you to the exact Module 1 starting materials.","Start with the [LLM Zoomcamp docs](https://datatalks.club/docs/courses/llm-zoomcamp/), the [general Zoomcamp logistics docs](https://datatalks.club/docs/courses/zoomcamp-logistics/), and the [LLM Zoomcamp GitHub repository](https://github.com/DataTalksClub/llm-zoomcamp).
+
+You can start whenever you want. The videos and GitHub materials are available, and the deadlines are listed in the [course management platform](https://courses.datatalks.club/llm-zoomcamp-2026/).
+
+A typical workflow is:
+
+1. Watch the lesson videos.
+2. Work through the lesson notebooks/code.
+3. Read the homework instructions on GitHub.
+4. Submit answers through the course platform before the deadline.
+
+Homework is similar to the lesson flow, but uses a different dataset or slightly different task.","[{'name': 'search', 'arguments': '{""query"":""begin LLM Zoomcamp what should I read first start first week FAQ""}'}]",0.00187125,04919992b3
+Is there a recommended weekly routine for going through the course materials and homework?,"Yes — the usual weekly workflow is:
+
+1. Watch the lesson videos  
+2. Work through the lesson notebooks/code  
+3. Read the homework instructions on GitHub  
+4. Submit your answers on the course platform before the deadline  
+
+The course materials and deadlines are available in the LLM Zoomcamp docs, the GitHub repo, and the course management platform. Homework often follows the lesson flow but may use a different dataset or slightly different task.
+
+If you want, I can also point you to where the homework instructions live for the current module.","Start with the [LLM Zoomcamp docs](https://datatalks.club/docs/courses/llm-zoomcamp/), the [general Zoomcamp logistics docs](https://datatalks.club/docs/courses/zoomcamp-logistics/), and the [LLM Zoomcamp GitHub repository](https://github.com/DataTalksClub/llm-zoomcamp).
+
+You can start whenever you want. The videos and GitHub materials are available, and the deadlines are listed in the [course management platform](https://courses.datatalks.club/llm-zoomcamp-2026/).
+
+A typical workflow is:
+
+1. Watch the lesson videos.
+2. Work through the lesson notebooks/code.
+3. Read the homework instructions on GitHub.
+4. Submit answers through the course platform before the deadline.
+
+Homework is similar to the lesson flow, but uses a different dataset or slightly different task.","[{'name': 'search', 'arguments': '{""query"":""recommended weekly routine course materials homework weekly routine""}'}]",0.0014415,04919992b3
+"Can I start the course anytime, or is there a fixed start date with deadlines?","Yes — you can start whenever you want. The videos and GitHub materials are available, and the homework deadlines are listed in the course management platform.
+
+A couple of notes:
+- The course has a live cohort structure with deadlines.
+- If you follow it self-paced, you can still learn, but certificates are only awarded for finishing with a live cohort.
+
+If you want, I can also point you to where the deadlines are tracked.","Start with the [LLM Zoomcamp docs](https://datatalks.club/docs/courses/llm-zoomcamp/), the [general Zoomcamp logistics docs](https://datatalks.club/docs/courses/zoomcamp-logistics/), and the [LLM Zoomcamp GitHub repository](https://github.com/DataTalksClub/llm-zoomcamp).
+
+You can start whenever you want. The videos and GitHub materials are available, and the deadlines are listed in the [course management platform](https://courses.datatalks.club/llm-zoomcamp-2026/).
+
+A typical workflow is:
+
+1. Watch the lesson videos.
+2. Work through the lesson notebooks/code.
+3. Read the homework instructions on GitHub.
+4. Submit answers through the course platform before the deadline.
+
+Homework is similar to the lesson flow, but uses a different dataset or slightly different task.","[{'name': 'search', 'arguments': '{""query"":""start anytime fixed start date deadlines course enrollment deadlines self-paced cohort""}'}]",0.00133725,04919992b3
+"What’s the usual order for watching lessons, doing notebooks, and submitting homework?","The usual workflow is:
+
+1. Watch the lesson
+2. Work through the notebook(s)
+3. Submit the homework
+
+In general, the homework follows the lesson workflow, but may use a different dataset or ask you to apply the same idea in a slightly different way. If the homework instructions are unclear, check the GitHub homework page first, since it often has extra context beyond the course platform.","Start with the [LLM Zoomcamp docs](https://datatalks.club/docs/courses/llm-zoomcamp/), the [general Zoomcamp logistics docs](https://datatalks.club/docs/courses/zoomcamp-logistics/), and the [LLM Zoomcamp GitHub repository](https://github.com/DataTalksClub/llm-zoomcamp).
+
+You can start whenever you want. The videos and GitHub materials are available, and the deadlines are listed in the [course management platform](https://courses.datatalks.club/llm-zoomcamp-2026/).
+
+A typical workflow is:
+
+1. Watch the lesson videos.
+2. Work through the lesson notebooks/code.
+3. Read the homework instructions on GitHub.
+4. Submit answers through the course platform before the deadline.
+
+Homework is similar to the lesson flow, but uses a different dataset or slightly different task.","[{'name': 'search', 'arguments': '{""query"":""usual order watching lessons doing notebooks submitting homework""}'}]",0.0014610,04919992b3
+"Does the homework follow the same pattern as the lessons, or is it different?","The homework usually follows the lesson workflow, but it is often not identical.
+
+In particular, it may:
+- use a different dataset,
+- ask you to apply the same idea in a slightly different way,
+- or include extra instructions in the GitHub homework guide.
+
+So: same general pattern, but with differences. If you want, I can also point you to the homework instructions for your module.","Start with the [LLM Zoomcamp docs](https://datatalks.club/docs/courses/llm-zoomcamp/), the [general Zoomcamp logistics docs](https://datatalks.club/docs/courses/zoomcamp-logistics/), and the [LLM Zoomcamp GitHub repository](https://github.com/DataTalksClub/llm-zoomcamp).
+
+You can start whenever you want. The videos and GitHub materials are available, and the deadlines are listed in the [course management platform](https://courses.datatalks.club/llm-zoomcamp-2026/).
+
+A typical workflow is:
+
+1. Watch the lesson videos.
+2. Work through the lesson notebooks/code.
+3. Read the homework instructions on GitHub.
+4. Submit answers through the course platform before the deadline.
+
+Homework is similar to the lesson flow, but uses a different dataset or slightly different task.","[{'name': 'search', 'arguments': '{""query"":""homework follow the same pattern as the lessons different homework pattern lessons FAQ""}'}]",0.001488,04919992b3
+How do I find my row on the leaderboard if I can’t find my name?,"When you set up your account, you’re automatically assigned a random display name, like “Lucid Elbakyan.” To find your row on the leaderboard, click the **“Jump to your record on the leaderboard”** link.
+
+If you want to see or change your displayed name, go to **Edit Course Profile**:
+- **First field:** your public nickname/display name
+- **Second field:** your official name for the certificate
+
+","When you set up your account, you are automatically assigned a random name, such as “Lucid Elbakyan.” Click on the ""Jump to your record on the leaderboard"" link to find your entry.
+
+If you want to see what your Display name is, click on the ""Edit Course Profile"" button.
+
+<{IMAGE:image_1}>
+
+- **First field:** This is your nickname/displayed name. You can change it if you want to be known by your Slack username, GitHub username, or any other nickname of your choice. This is useful if you want to remain anonymous.
+- **Second field:** Change this to your official name as in your identification documents—passport, national ID card, driver's license, etc. This is mandatory if you do not want ""Lucid Elbakyan"" on your certificate. This name will appear on your Certificate!","[{'name': 'search', 'arguments': '{""query"":""find my row on the leaderboard if I can’t find my name""}'}]",0.00186975,c2903069a0
+What name am I showing on the leaderboard by default?,"By default, you’re shown on the leaderboard under a random anonymous nickname, like **“Lucid Elbakyan.”**
+
+If you want to see or change it, go to **Edit Course Profile** and check the **first field** — that’s your public leaderboard/display name.","When you set up your account, you are automatically assigned a random name, such as “Lucid Elbakyan.” Click on the ""Jump to your record on the leaderboard"" link to find your entry.
+
+If you want to see what your Display name is, click on the ""Edit Course Profile"" button.
+
+<{IMAGE:image_1}>
+
+- **First field:** This is your nickname/displayed name. You can change it if you want to be known by your Slack username, GitHub username, or any other nickname of your choice. This is useful if you want to remain anonymous.
+- **Second field:** Change this to your official name as in your identification documents—passport, national ID card, driver's license, etc. This is mandatory if you do not want ""Lucid Elbakyan"" on your certificate. This name will appear on your Certificate!","[{'name': 'search', 'arguments': '{""query"":""leaderboard default name shown""}'}]",0.00125775,c2903069a0
+Where do I check or change the display name on my course profile?,"Go to **Edit Course Profile**.
+
+- The **first field** is your **display name / public nickname** shown on the leaderboard.
+- The **second field** is your **official certificate name**.
+
+If you want, I can also explain which name is visible publicly versus on the certificate.","When you set up your account, you are automatically assigned a random name, such as “Lucid Elbakyan.” Click on the ""Jump to your record on the leaderboard"" link to find your entry.
+
+If you want to see what your Display name is, click on the ""Edit Course Profile"" button.
+
+<{IMAGE:image_1}>
+
+- **First field:** This is your nickname/displayed name. You can change it if you want to be known by your Slack username, GitHub username, or any other nickname of your choice. This is useful if you want to remain anonymous.
+- **Second field:** Change this to your official name as in your identification documents—passport, national ID card, driver's license, etc. This is mandatory if you do not want ""Lucid Elbakyan"" on your certificate. This name will appear on your Certificate!","[{'name': 'search', 'arguments': '{""query"":""display name course profile check change""}'}]",0.00128325,c2903069a0
+How can I get rid of the random name and use my own nickname instead?,"Yes — you can change the random leaderboard name to your own nickname.
+
+Go to **Edit Course Profile** and update the **first field**. That field controls your **public display name / nickname** on the leaderboard, and you can set it to something like your **Slack username, GitHub username, or any nickname you prefer**.
+
+The **second field** is for your **official name** for the certificate.","When you set up your account, you are automatically assigned a random name, such as “Lucid Elbakyan.” Click on the ""Jump to your record on the leaderboard"" link to find your entry.
+
+If you want to see what your Display name is, click on the ""Edit Course Profile"" button.
+
+<{IMAGE:image_1}>
+
+- **First field:** This is your nickname/displayed name. You can change it if you want to be known by your Slack username, GitHub username, or any other nickname of your choice. This is useful if you want to remain anonymous.
+- **Second field:** Change this to your official name as in your identification documents—passport, national ID card, driver's license, etc. This is mandatory if you do not want ""Lucid Elbakyan"" on your certificate. This name will appear on your Certificate!","[{'name': 'search', 'arguments': '{""query"":""random name use my own nickname instead profile display name change nickname FAQ""}'}]",0.0015810,c2903069a0
+What do I need to enter so my certificate doesn’t say the default random name?,"Go to **Edit Course Profile** and set the **second field** to your **official name** exactly as you want it to appear on the certificate.
+
+- **First field** = public display name / leaderboard nickname
+- **Second field** = name printed on the certificate
+
+If you leave the certificate name unset, it may show the default random name like “Lucid Elbakyan.”","When you set up your account, you are automatically assigned a random name, such as “Lucid Elbakyan.” Click on the ""Jump to your record on the leaderboard"" link to find your entry.
+
+If you want to see what your Display name is, click on the ""Edit Course Profile"" button.
+
+<{IMAGE:image_1}>
+
+- **First field:** This is your nickname/displayed name. You can change it if you want to be known by your Slack username, GitHub username, or any other nickname of your choice. This is useful if you want to remain anonymous.
+- **Second field:** Change this to your official name as in your identification documents—passport, national ID card, driver's license, etc. This is mandatory if you do not want ""Lucid Elbakyan"" on your certificate. This name will appear on your Certificate!","[{'name': 'search', 'arguments': '{""query"":""certificate default random name what do I need to enter""}'}]",0.0013065,c2903069a0
+"Can I take this course at my own pace and still get a certificate, or is the certificate only for the live cohort?","No — you can take the course in self-paced mode, but you **won’t get a certificate** that way.
+
+The FAQ says certificates are only awarded if you finish the course with a **live cohort**, because the certificate requires completing the peer-review/capstone process while the course is actively running.","No, you can only get a certificate if you finish the course with a ""live"" cohort.
+
+We don't award certificates for the self-paced mode. The reason is you need to peer-review 3 capstone(s) after submitting your project.
+
+You can only peer-review projects at the time the course is running; after the form is closed and the peer-review list is compiled.","[{'name': 'search', 'arguments': '{""query"":""certificate self-paced live cohort own pace certificate FAQ""}'}]",0.00106425,69d122f12e
+"If I complete everything in self-paced mode, do I get any certificate at the end?","No — if you complete the course in self-paced mode, you won’t get a certificate.
+
+According to the FAQ, certificates are only awarded if you finish the course with a live cohort, because the certificate requires peer-reviewing capstone projects while the course is running.","No, you can only get a certificate if you finish the course with a ""live"" cohort.
+
+We don't award certificates for the self-paced mode. The reason is you need to peer-review 3 capstone(s) after submitting your project.
+
+You can only peer-review projects at the time the course is running; after the form is closed and the peer-review list is compiled.","[{'name': 'search', 'arguments': '{""query"":""self-paced mode certificate at the end complete everything certificate""}'}]",0.00105525,69d122f12e
+Why aren’t certificates given for the self-paced version of the course?,"Certificates aren’t given for the self-paced version because the course requires you to **peer-review 3 capstones after submitting your project**. That peer-review step is only available while the course is running live with a cohort.
+
+So:
+
+- **Live cohort:** eligible for a certificate
+- **Self-paced:** no certificate
+
+If you want, I can also explain how the peer-review/capstone part works.","No, you can only get a certificate if you finish the course with a ""live"" cohort.
+
+We don't award certificates for the self-paced mode. The reason is you need to peer-review 3 capstone(s) after submitting your project.
+
+You can only peer-review projects at the time the course is running; after the form is closed and the peer-review list is compiled.","[{'name': 'search', 'arguments': '{""query"":""certificates self-paced version of the course why aren\'t certificates given""}'}]",0.00118875,69d122f12e
+Do I have to be in the running cohort to do the required peer reviews for the capstone project?,"Yes — for the capstone, you need to be in the **live/running cohort** to do the required peer reviews.
+
+The FAQ says:
+- you can only get a certificate if you finish with a **live cohort**
+- you need to **peer-review 3 capstones**
+- you can only do those peer reviews **while the course is running**, before the form closes and the review list is compiled
+
+So if you’re doing the course self-paced, you won’t be able to complete the required peer reviews for the capstone certificate.","No, you can only get a certificate if you finish the course with a ""live"" cohort.
+
+We don't award certificates for the self-paced mode. The reason is you need to peer-review 3 capstone(s) after submitting your project.
+
+You can only peer-review projects at the time the course is running; after the form is closed and the peer-review list is compiled.","[{'name': 'search', 'arguments': '{""query"":""running cohort required peer reviews capstone project""}'}]",0.0013320,69d122f12e
+"Is it possible to peer-review projects after the course forms are closed, or only while the course is active?","You can only peer-review projects while the course is running, after the project submission deadline has passed and the peer-review list has been compiled. Once the forms are closed, you can’t do peer-reviews anymore.
+
+","No, you can only get a certificate if you finish the course with a ""live"" cohort.
+
+We don't award certificates for the self-paced mode. The reason is you need to peer-review 3 capstone(s) after submitting your project.
+
+You can only peer-review projects at the time the course is running; after the form is closed and the peer-review list is compiled.","[{'name': 'search', 'arguments': '{""query"":""peer-review projects after the course forms are closed only while course is active""}'}]",0.00098925,69d122f12e
+"If I skipped the first homework, am I still eligible for the course certificate?","Yes — skipping the first homework does **not** affect your certificate eligibility.
+
+According to the FAQ, **homework is not mandatory** for the certificate. You still need to **pass the Capstone project** to get the certificate.","Yes, you need to pass the Capstone project to get the certificate. Homework is not mandatory, though it is recommended for reinforcing concepts, and the points awarded count towards your rank on the leaderboard.","[{'name': 'search', 'arguments': '{""query"":""certificate eligibility skipped first homework homework requirement course certificate""}'}]",0.00108825,9f689c185f
+"Do I have to submit every homework to get certified, or is something else enough?","No — you do **not** have to submit every homework to get certified.
+
+According to the FAQ, **homework is not mandatory**; what matters for certification is **passing the Capstone project**. Homework only affects your **leaderboard rank**, not your certificate.
+
+","Yes, you need to pass the Capstone project to get the certificate. Homework is not mandatory, though it is recommended for reinforcing concepts, and the points awarded count towards your rank on the leaderboard.","[{'name': 'search', 'arguments': '{""query"":""certified homework submit every homework enough certification FAQ""}'}]",0.00124125,9f689c185f
+What do I need to complete in order to receive the certificate if homework isn't required?,"You need to **pass the Capstone project** to receive the certificate.  
+**Homework is not mandatory** for the certificate, though it is recommended and the points count toward the leaderboard.","Yes, you need to pass the Capstone project to get the certificate. Homework is not mandatory, though it is recommended for reinforcing concepts, and the points awarded count towards your rank on the leaderboard.","[{'name': 'search', 'arguments': '{""query"":""certificate homework not required complete in order to receive the certificate""}'}]",0.0010005,9f689c185f
+Is the Capstone project the only thing that really matters for getting the certificate?,"Mostly, yes — **you need to pass the Capstone project to get the certificate**. Homework is **not mandatory** for the certificate, though it’s recommended and helps with the leaderboard.
+
+One important caveat: you can only get the certificate if you finish the course with the **live cohort**, because the capstone requires **peer review**, which is only available while the course is running.
+
+","Yes, you need to pass the Capstone project to get the certificate. Homework is not mandatory, though it is recommended for reinforcing concepts, and the points awarded count towards your rank on the leaderboard.","[{'name': 'search', 'arguments': '{""query"":""Capstone project certificate only thing matters getting the certificate""}'}]",0.00116925,9f689c185f
+"Are homework assignments mandatory, or do they just help with practice and ranking?","Homework assignments are **not mandatory**. You can still get the certificate by **passing the Capstone project**.
+
+That said, homework is **recommended** because it helps reinforce the material, and the points you earn **count toward your leaderboard rank**.","Yes, you need to pass the Capstone project to get the certificate. Homework is not mandatory, though it is recommended for reinforcing concepts, and the points awarded count towards your rank on the leaderboard.","[{'name': 'search', 'arguments': '{""query"":""homework assignments mandatory practice ranking""}'}]",0.0010905,9f689c185f
+Why does the homework content keep changing before the deadline?,"The homework content can change because the homework is not considered final until it’s fully ready.
+
+It’s ready only when both of these are true:
+- the homework form is open on the course platform
+- the homework title does **not** contain `[DRAFT]`
+
+Until then, the content may still be updated. If you work on it early, just keep in mind the final version may be different.","If the homework title contains `[DRAFT]`, it means the homework is not ready yet.
+
+The homework is ready only when both are true:
+
+- The homework form is open on the course management platform.
+- The homework title does not contain `[DRAFT]`.
+
+Until then, the content can still change. Working on the material or homework in advance is at your own risk, because the final version can be different.","[{'name': 'search', 'arguments': '{""query"":""homework content keep changing before deadline""}'}]",0.00124575,96286b4be4
+What does it mean when a homework title has [DRAFT] in it?,"If a homework title contains `[DRAFT]`, it means the homework is **not ready yet**.
+
+It becomes ready only when **both** are true:
+- the homework form is open on the course management platform, and
+- the title no longer contains `[DRAFT]`.
+
+Until then, the homework content may still change, so working on it early is at your own risk.","If the homework title contains `[DRAFT]`, it means the homework is not ready yet.
+
+The homework is ready only when both are true:
+
+- The homework form is open on the course management platform.
+- The homework title does not contain `[DRAFT]`.
+
+Until then, the content can still change. Working on the material or homework in advance is at your own risk, because the final version can be different.","[{'name': 'search', 'arguments': '{""query"":""[DRAFT] homework title meaning""}'}]",0.00133275,96286b4be4
+How can I tell if the homework is actually ready to do?,"The homework is ready only when **both** of these are true:
+
+- The homework form is open on the course management platform.
+- The homework title does **not** contain `[DRAFT]`.
+
+If the title still says `[DRAFT]`, it’s not ready yet, and the content may still change. Working on it early is at your own risk because the final version can differ.","If the homework title contains `[DRAFT]`, it means the homework is not ready yet.
+
+The homework is ready only when both are true:
+
+- The homework form is open on the course management platform.
+- The homework title does not contain `[DRAFT]`.
+
+Until then, the content can still change. Working on the material or homework in advance is at your own risk, because the final version can be different.","[{'name': 'search', 'arguments': '{""query"":""How can I tell if the homework is actually ready to do?""}'}]",0.00141525,96286b4be4
+Is it safe to start homework early if the title still says draft?,"Not yet — if the homework title still contains `[DRAFT]`, it means the homework is **not ready yet** and the content can still change. The homework is considered ready only when:
+
+- the homework form is open on the course platform, and
+- the title no longer contains `[DRAFT]`.
+
+You can work on it early, but it’s **at your own risk** because the final version may be different.","If the homework title contains `[DRAFT]`, it means the homework is not ready yet.
+
+The homework is ready only when both are true:
+
+- The homework form is open on the course management platform.
+- The homework title does not contain `[DRAFT]`.
+
+Until then, the content can still change. Working on the material or homework in advance is at your own risk, because the final version can be different.","[{'name': 'search', 'arguments': '{""query"":""safe to start homework early title says draft homework draft early""}'}]",0.00139125,96286b4be4
+Can the homework instructions still be updated after the form is open?,"Yes — the homework content can still change after the form is open **if the homework is marked `[DRAFT]`**. The homework is considered ready only when:
+
+- the submission form is open, and
+- the homework title does **not** contain `[DRAFT]`
+
+So if it’s still in draft, you should expect updates, and working on it early is at your own risk.","If the homework title contains `[DRAFT]`, it means the homework is not ready yet.
+
+The homework is ready only when both are true:
+
+- The homework form is open on the course management platform.
+- The homework title does not contain `[DRAFT]`.
+
+Until then, the content can still change. Working on the material or homework in advance is at your own risk, because the final version can be different.","[{'name': 'search', 'arguments': '{""query"":""homework instructions updated after form is open""}'}]",0.0013080,96286b4be4
+When is the next time this course will be offered?,The course will next be offered in **Summer 2027**.,Summer 2027.,"[{'name': 'search', 'arguments': '{""query"":""next time course will be offered offered again next offering when is the course offered next""}'}]",0.00081525,bd31146b0e
+Do you know when the next cohort starts for this course?,"The next cohort is expected to start in **Summer 2027**.
+
+If you want, I can also help you find where to track the syllabus and deadlines for the current cohort.",Summer 2027.,"[{'name': 'search', 'arguments': '{""query"":""next cohort starts course start date cohort""}'}]",0.00098175,bd31146b0e
+"Is there an upcoming session of the course, and if so, when?",Yes — the FAQ says the course will be offered next in **Summer 2027**.,Summer 2027.,"[{'name': 'search', 'arguments': '{""query"":""upcoming session course when next session date schedule""}'}]",0.00094125,bd31146b0e
+What’s the next scheduled offering for this course?,The next scheduled offering is **Summer 2027**.,Summer 2027.,"[{'name': 'search', 'arguments': '{""query"":""next scheduled offering course""}'}]",0.001095,bd31146b0e
+When can I expect this course to run again?,The course is expected to be offered again in **Summer 2027**.,Summer 2027.,"[{'name': 'search', 'arguments': '{""query"":""When will the course run again next offering schedule repeat""}'}]",0.000945,bd31146b0e
+Where can I find the course lectures or videos?,"The best place to find the course lectures/videos is the **LLM Zoomcamp GitHub repository**:
+
+- Main repo: https://github.com/DataTalksClub/llm-zoomcamp
+
+Open the **lesson folders** there — each lesson page has the relevant videos linked at the top.  
+If there’s any confusion, the GitHub repo is the best source to follow because it stays more up to date than the YouTube playlist.","Use the [LLM Zoomcamp GitHub repository](https://github.com/DataTalksClub/llm-zoomcamp) as the main entry point.
+
+Open the lesson folders in the repo. Each lesson page has the relevant videos linked at the top.
+
+<{IMAGE:lessons}>
+
+When in doubt, follow the GitHub repo first, because it is easier to keep updated than the YouTube playlist.","[{'name': 'search', 'arguments': '{""query"":""course lectures videos where find lectures recordings videos""}'}]",0.00133275,31456f4b5f
+Is there a main page or repo I should open first for each lesson?,"Yes — the **LLM Zoomcamp GitHub repo** is the main entry point for each lesson:
+
+- **Main repo:** https://github.com/DataTalksClub/llm-zoomcamp
+- Open the **lesson folder/page** in the repo for the lesson you’re on.
+- The lesson page usually has the **relevant videos linked at the top**.
+- If you’re unsure, **follow the GitHub repo first** rather than the YouTube playlist, since the repo is easier to keep updated.
+
+If you want, I can also point you to the exact folder for the lesson you’re working on.","Use the [LLM Zoomcamp GitHub repository](https://github.com/DataTalksClub/llm-zoomcamp) as the main entry point.
+
+Open the lesson folders in the repo. Each lesson page has the relevant videos linked at the top.
+
+<{IMAGE:lessons}>
+
+When in doubt, follow the GitHub repo first, because it is easier to keep updated than the YouTube playlist.","[{'name': 'search', 'arguments': '{""query"":""main page repo lesson open first lesson main page repo""}'}]",0.00153525,31456f4b5f
+How do I know which video goes with a specific lesson?,"Use the **LLM Zoomcamp GitHub repository** as the main reference. Each **lesson page/folder has the relevant videos linked at the top**, so that’s the easiest way to see which video goes with a specific lesson.
+
+If you’re unsure, **follow the GitHub repo first** rather than the YouTube playlist, since the repo is usually easier to keep updated.","Use the [LLM Zoomcamp GitHub repository](https://github.com/DataTalksClub/llm-zoomcamp) as the main entry point.
+
+Open the lesson folders in the repo. Each lesson page has the relevant videos linked at the top.
+
+<{IMAGE:lessons}>
+
+When in doubt, follow the GitHub repo first, because it is easier to keep updated than the YouTube playlist.","[{'name': 'search', 'arguments': '{""query"":""which video goes with a specific lesson video lesson mapping""}'}]",0.00149475,31456f4b5f
+Are the lesson videos linked somewhere on each lesson page?,"Yes. According to the FAQ, each lesson page has the relevant videos linked at the top. The course recommends using the LLM Zoomcamp GitHub repository as the main entry point, since it’s kept more up to date than the YouTube playlist.","Use the [LLM Zoomcamp GitHub repository](https://github.com/DataTalksClub/llm-zoomcamp) as the main entry point.
+
+Open the lesson folders in the repo. Each lesson page has the relevant videos linked at the top.
+
+<{IMAGE:lessons}>
+
+When in doubt, follow the GitHub repo first, because it is easier to keep updated than the YouTube playlist.","[{'name': 'search', 'arguments': '{""query"":""lesson videos linked somewhere on each lesson page""}'}]",0.00116175,31456f4b5f
+Should I use the GitHub repo or the YouTube playlist to follow the course updates?,"Use the **GitHub repo** as the main source for course updates. The FAQ says it’s easier to keep updated than the YouTube playlist.
+
+So: **follow the GitHub repo first**, and use the videos linked from each lesson page there.","Use the [LLM Zoomcamp GitHub repository](https://github.com/DataTalksClub/llm-zoomcamp) as the main entry point.
+
+Open the lesson folders in the repo. Each lesson page has the relevant videos linked at the top.
+
+<{IMAGE:lessons}>
+
+When in doubt, follow the GitHub repo first, because it is easier to keep updated than the YouTube playlist.","[{'name': 'search', 'arguments': '{""query"":""GitHub repo YouTube playlist course updates follow updates FAQ""}'}]",0.0012015,31456f4b5f

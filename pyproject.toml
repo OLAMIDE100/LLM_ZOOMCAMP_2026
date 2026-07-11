@@ -10,6 +10,7 @@ dependencies = [
     "minsearch>=0.1.1",
     "onnxruntime>=1.27.0",
     "openai>=2.43.0",
+    "pandas>=3.0.3",
     "psycopg[binary]>=3.3.4",
     "python-dotenv>=1.2.2",
     "requests>=2.34.2",
@@ -17,6 +18,7 @@ dependencies = [
     "sqlitesearch>=0.1.1",
     "tokenizers>=0.22.2",
     "toyaikit>=0.0.11",
+    "tqdm>=4.68.3",
 ]
 
 [dependency-groups]
