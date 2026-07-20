@@ -1,0 +1,44 @@
+services:
+  monitoring:
+    image: pgvector/pgvector:pg17
+    container_name: monitoring
+    environment:
+      POSTGRES_USER: user
+      POSTGRES_PASSWORD: pswd
+      POSTGRES_DB: faq
+    volumes:
+      - monitoring_data:/var/lib/postgresql/data
+    ports:
+      - "5432:5432"
+    networks:
+      - monitoring
+
+
+  streamlit:
+    build:
+      context: ../
+      dockerfile: Dockerfile
+    pull_policy: build
+    environment:
+      - POSTGRES_HOST=monitoring
+      - POSTGRES_DB=course_assistant
+      - POSTGRES_USER=user
+      - POSTGRES_PASSWORD=pswd
+      - OPENAI_API_KEY=
+    ports:
+      - "8501:8501"
+    depends_on:
+      - monitoring
+    networks:
+      - monitoring
+
+volumes:
+  monitoring_data:
+
+networks:
+  monitoring:
+    name: monitoring
+
+
+
+
